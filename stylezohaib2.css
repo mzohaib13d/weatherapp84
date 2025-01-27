@@ -3,117 +3,181 @@
     --text-color: #333;
     --card-bg: rgba(255, 255, 255, 0.9);
     --shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-}
-
-body {
+  }
+  
+  body {
     font-family: Arial, sans-serif;
     margin: 0;
     padding: 20px;
-    background-image: url('/shahra-e-faisal-road-karachi-traffic.jpg');
+    background-image: url("/shahra-e-faisal-road-karachi-traffic.jpg");
     background-size: cover;
     background-position: center;
     background-attachment: fixed;
     min-height: 100vh;
-}
-
+  }
   
   body.dark-mode {
-    background-image: url("./free-photo-of-traffi-at-night.jpeg"); 
-    }
+    background-image: url("./free-photo-of-traffi-at-night.jpeg");
+  }
   
-  
-.dark-mode {
+  .dark-mode {
     --bg-color: rgba(51, 51, 51, 0.8);
     --text-color: #f0f0f0;
     --card-bg: rgba(68, 68, 68, 0.9);
     --shadow: 0 4px 6px rgba(255, 255, 255, 0.1);
-}
-
-.container {
+  }
+  
+  .container {
     max-width: 600px;
     margin: 0 auto;
     background-color: var(--bg-color);
     padding: 20px;
     border-radius: 8px;
     box-shadow: var(--shadow);
-}
-
-h1 {
+  }
+  
+  h1 {
     text-align: center;
     color: var(--text-color);
-}
-
-.search-container {
+  }
+  
+  .search-container {
     display: flex;
     margin-bottom: 20px;
-}
-
-#cityInput {
+  }
+  
+  #cityInput {
     flex-grow: 1;
     padding: 10px;
     font-size: 16px;
     border: 1px solid #ddd;
     border-radius: 4px 0 0 4px;
-}
-
-#searchBtn {
+  }
+  
+  #searchBtn {
     padding: 10px 20px;
     font-size: 16px;
-    background-color: #4CAF50;
+    background-color: #4caf50;
     color: white;
     border: none;
     border-radius: 0 4px 4px 0;
     cursor: pointer;
     margin-left: 15px;
-}
-
-#weatherInfo {
+  }
+  
+  #weatherInfo {
     background-color: var(--card-bg);
     padding: 20px;
     border-radius: 8px;
     box-shadow: var(--shadow);
-}
-
-.weather-details {
+  }
+  
+  .weather-details {
     display: flex;
     justify-content: space-between;
     align-items: center;
-}
-
-.weather-icon {
+  }
+  
+  .weather-icon {
     font-size: 48px;
     margin-right: 20px;
-}
-
-.weather-image {
+  }
+  
+  .weather-image {
     width: 100px;
     height: 100px;
     object-fit: cover;
     border-radius: 8px;
     margin-right: 20px;
-}
-
-.toggle-container {
+  }
+  
+  .toggle-container {
     text-align: right;
     margin-bottom: 10px;
-}
-
-#darkModeToggle {
+  }
+  
+  #darkModeToggle {
     background-color: #333;
     color: white;
     border: none;
     padding: 5px 10px;
     border-radius: 4px;
     cursor: pointer;
-}
-
-@media (max-width: 480px) {
+  }
+  
+  @media (max-width: 480px) {
     .weather-details {
-        flex-direction: column;
-        align-items: flex-start;
+      flex-direction: column;
+      align-items: flex-start;
     }
-
-    .weather-icon, .weather-image {
-        margin-bottom: 10px;
+  
+    .weather-icon,
+    .weather-image {
+      margin-bottom: 10px;
     }
-}
+  }
+  
+  /* New responsive styles for max-width: 390px */
+  @media (max-width: 390px) {
+    body {
+      padding: 10px;
+    }
+  
+    .container {
+      padding: 15px;
+    }
+  
+    h1 {
+      font-size: 24px;
+    }
+  
+    .search-container {
+      flex-direction: column;
+    }
+  
+    #cityInput {
+      width: 90%;
+      border-radius: 4px;
+      margin-bottom: 10px;
+    }
+  
+    #searchBtn {
+      width: 100%;
+      border-radius: 4px;
+      margin-left: 0;
+    }
+  
+    #weatherInfo {
+      padding: 15px;
+    }
+  
+    .weather-details {
+      flex-direction: column;
+      align-items: center;
+      text-align: center;
+    }
+  
+    .weather-icon {
+      font-size: 36px;
+      margin-right: 0;
+      margin-bottom: 10px;
+    }
+  
+    .weather-image {
+      width: 80px;
+      height: 80px;
+      margin-right: 0;
+      margin-bottom: 10px;
+    }
+  
+    .toggle-container {
+      text-align: center;
+    }
+  
+    #darkModeToggle {
+      width: 100%;
+      margin-bottom: 10px;
+    }
+  }
+  
+  
