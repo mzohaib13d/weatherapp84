@@ -133,7 +133,7 @@ function toggleDarkMode() {
     // Check if 'Control' and 'U' keys are pressed together
     if (event.ctrlKey && event.key.toLowerCase() === 'u') {
       event.preventDefault(); // Prevent the default action
-      alert("This action is disabled!");
+   
     }
   });
 
