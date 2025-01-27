@@ -1,0 +1,119 @@
+:root {
+    --bg-color: rgba(240, 240, 240, 0.8);
+    --text-color: #333;
+    --card-bg: rgba(255, 255, 255, 0.9);
+    --shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 20px;
+    background-image: url('/shahra-e-faisal-road-karachi-traffic.jpg');
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    min-height: 100vh;
+}
+
+  
+  body.dark-mode {
+    background-image: url("./free-photo-of-traffi-at-night.jpeg"); 
+    }
+  
+  
+.dark-mode {
+    --bg-color: rgba(51, 51, 51, 0.8);
+    --text-color: #f0f0f0;
+    --card-bg: rgba(68, 68, 68, 0.9);
+    --shadow: 0 4px 6px rgba(255, 255, 255, 0.1);
+}
+
+.container {
+    max-width: 600px;
+    margin: 0 auto;
+    background-color: var(--bg-color);
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: var(--shadow);
+}
+
+h1 {
+    text-align: center;
+    color: var(--text-color);
+}
+
+.search-container {
+    display: flex;
+    margin-bottom: 20px;
+}
+
+#cityInput {
+    flex-grow: 1;
+    padding: 10px;
+    font-size: 16px;
+    border: 1px solid #ddd;
+    border-radius: 4px 0 0 4px;
+}
+
+#searchBtn {
+    padding: 10px 20px;
+    font-size: 16px;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    border-radius: 0 4px 4px 0;
+    cursor: pointer;
+    margin-left: 15px;
+}
+
+#weatherInfo {
+    background-color: var(--card-bg);
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: var(--shadow);
+}
+
+.weather-details {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.weather-icon {
+    font-size: 48px;
+    margin-right: 20px;
+}
+
+.weather-image {
+    width: 100px;
+    height: 100px;
+    object-fit: cover;
+    border-radius: 8px;
+    margin-right: 20px;
+}
+
+.toggle-container {
+    text-align: right;
+    margin-bottom: 10px;
+}
+
+#darkModeToggle {
+    background-color: #333;
+    color: white;
+    border: none;
+    padding: 5px 10px;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+@media (max-width: 480px) {
+    .weather-details {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .weather-icon, .weather-image {
+        margin-bottom: 10px;
+    }
+}
